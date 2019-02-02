@@ -24,10 +24,10 @@ void Erreur(char *Msg) {
 ///////////////////////////////////////
 
 char Racine(TExprArb A) {
-// Donne le caractère à la racine de l'EAA E (E non vide)
+// Donne le caractï¿½re ï¿½ la racine de l'EAA E (E non vide)
 
 	if (A == VIDE) 
-		Erreur("Erreur fonction Racine(TExprArb A) : A ne peut pas être vide!");
+		Erreur("Erreur fonction Racine(TExprArb A) : A ne peut pas ï¿½tre vide!");
 
 	return (*A).Valeur;
 }
@@ -36,7 +36,7 @@ TExprArb Fg(TExprArb A) {
 // Donne, si possible, le fils gauche de E (E non vide)
 
 	if (A == VIDE) 
-		Erreur("Erreur fonction Fg(TExprArb A) : A ne peut pas être vide!");
+		Erreur("Erreur fonction Fg(TExprArb A) : A ne peut pas ï¿½tre vide!");
 
 	return A->fg;
 }
@@ -45,7 +45,7 @@ TExprArb Fd(TExprArb A) {
 // Donne, si possible, le fils droit de E (E non vide)
 
 	if (A == VIDE) 
-		Erreur("Erreur fonction Fd(TExprArb A) : A ne peut pas être vide!");
+		Erreur("Erreur fonction Fd(TExprArb A) : A ne peut pas ï¿½tre vide!");
 
 	return A->fd;
 }
@@ -70,7 +70,7 @@ TExprArb Cons2(char X, TExprArb fg, TExprArb fd) {
 }
 
 TExprArb ConsF(char X) {
-// Construit le noeud externe (càd une feuille) d'EAA : <c, VIDE, VIDE>
+// Construit le noeud externe (cï¿½d une feuille) d'EAA : <c, VIDE, VIDE>
 
 	TExprArb NA = (TNoeud *)malloc(sizeof(TNoeud));
 	NA->Valeur = X;
@@ -80,8 +80,8 @@ TExprArb ConsF(char X) {
 	return NA;
 }
 
-bool EstFeuille(TExprArb E) {
-	//Donne true ssi E (non vide) est réduit à une feuille
+bool EstFeuille(TExprArb A) {
+	//Donne true ssi E (non vide) est rï¿½duit ï¿½ une feuille
 
-	return (E->fg) == (E->fd);
+	return (A->fg) == (A->fd);
 }
