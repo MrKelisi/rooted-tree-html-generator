@@ -41,7 +41,7 @@ To display the tree in console with a 90° angle to the left, we create the proc
 2. Root value, with n spaces in front
 3. Display function on the left branch, with n+3 spaces in front
 
-![img-rooted-tree-console](files/img-rooted-tree-console.png)
+![img-rooted-tree-console](https://imgur.com/EcPG5Q3.png)
 
 
 
@@ -57,7 +57,7 @@ Then it calls the function on each child again until the leaves.
 
 Branches beneath a node can shrink if you click on the node, and branches will become dotted.
 
-![img-rooted-tree-subtrees](files/img-rooted-tree-subtrees.gif)
+![img-rooted-tree-subtrees](https://imgur.com/4NKqurC.gif)
 
 
 ## 2.2 Display the graph of a mathematical expression in HTML
@@ -67,4 +67,4 @@ The graph can be set with a custom window size, and a function will create, with
 
 To display the curves' values, I use javascript to track the mouse position, transform it into a x number for the graph, and use the polylines to calculate the y number of each curve. Dots follow the mouse along the curves for better view.
 
-![img-rooted-tree-graph](files/img-rooted-tree-graph.gif)
+![img-rooted-tree-graph](https://imgur.com/AWXQkrl.gif)
