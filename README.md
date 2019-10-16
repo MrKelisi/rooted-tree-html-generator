@@ -1,7 +1,7 @@
 # rooted-tree-html-generator
 A school project in C++ that generates rooted-trees of mathematical expressions and their graph in HTML.
 
-You can find an [example page here](https://mrkelisi.fr/f/rooted-tree-example.html).
+You can find an [example page here](http://htmlpreview.github.io/?https://github.com/MrKelisi/rooted-tree-html-generator/blob/master/Exemple.html).
 
 # 1. Display the tree of a mathematical expression in a console
 
